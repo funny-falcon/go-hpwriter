@@ -9,7 +9,7 @@ import (
 type shard struct {
 	sync.Mutex
 	b []byte
-	_pad [32]byte
+	_pad [12]uintptr
 }
 
 type ShardedBuffers struct {
